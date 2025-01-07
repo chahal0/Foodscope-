@@ -1,0 +1,255 @@
+/* Sensory Dashboard Layout */
+.sensory-mapping-dashboard {
+  background-color: #ff7e5f;
+  font-family: 'Roboto', sans-serif;
+  max-width: 1250px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  color: #0b0a0a;
+}
+
+/* Refined Classy Heading Style */
+.sensory-mapping-dashboard h2 {
+  font-size: 2.8rem; /* Elegant font size */
+  font-weight: 700;
+  color: #fff; /* White text for readability */
+  margin-bottom: 30px;
+  padding: 20px 30px; /* Spacious padding */
+  background: linear-gradient(135deg, #4A90E2, #3B5998); /* Subtle gradient */
+  border-radius: 10px; /* Rounded corners for a smooth look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Gentle shadow for depth */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text-shadow for clarity */
+  letter-spacing: 1px;
+  border: 2px solid #ffffff50; /* Transparent white border */
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.sensory-mapping-dashboard h2:hover {
+  background: linear-gradient(135deg, #3B5998, #2C3E50); /* Slightly darker gradient on hover */
+  transform: scale(1.03); /* Minor scaling for interactivity */
+}
+
+/* Image Container Layout */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.image-left, .image-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.image-left img, .image-right img {
+  width: 250px;  /* Adjust the size as needed */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-left {
+  align-items: flex-start;
+}
+
+.image-right {
+  align-items: flex-end;
+}
+
+/* Sensory Form Styling */
+.sensory-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sensory-control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.sensory-control label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3c21d0;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.sensory-control select,
+.sensory-control input {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #d5d8e6;
+  background-color: #dad9e8;
+  width: 100%;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+.sensory-control select:focus,
+.sensory-control input:focus {
+  border-color: #4A90E2;
+  outline: none;
+  background-color: #4A90E2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+}
+
+.sensory-control select:hover,
+.sensory-control input:hover {
+  background-color: #1b1919;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+.sensory-control input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.sensory-control input[type="range"]:focus {
+  background: #4A90E2;
+}
+
+.sensory-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #4A90E2;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sensory-control input[type="range"]:hover::-webkit-slider-thumb {
+  background: #357ab7;
+}
+
+/* Result Section */
+.results-section {
+  margin-top: 40px;
+  background-color: #2b2222;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.results-section:hover {
+  transform: scale(1.02);
+}
+
+.results-section h3 {
+  font-size: 1.6rem;
+  color: #c0b6b6;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.results-section h3:hover {
+  color: #4A90E2;
+}
+
+.ambiance {
+  font-size: 1.2rem;
+  color: #ffe29f;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.ambiance:hover {
+  color: #4A90E2;
+}
+
+/* Playlist link */
+.playlist-link {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #1DB954;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.playlist-link:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+}
+
+.playlist-link:focus {
+  outline: none;
+}
+
+/* Elegant fade-in transition for the whole form and results */
+.sensory-form,
+.results-section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.sensory-form {
+  animation-delay: 0.4s;
+}
+
+.results-section {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .sensory-mapping-dashboard {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .sensory-control {
+    max-width: 100%;
+  }
+
+  .sensory-form {
+    gap: 15px;
+  }
+
+  .sensory-control select,
+  .sensory-control input {
+    font-size: 1rem;
+  }
+
+  .results-section {
+    padding: 20px;
+  }
+}

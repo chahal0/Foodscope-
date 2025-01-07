@@ -1,0 +1,202 @@
+/* Glowing Text Animation */
+/* Subtle Boxed Text */
+.glowing-text {
+  font-size: 2.5rem; /* Slightly smaller font size for subtler effect */
+  color: #4caf50; /* Eco-friendly Green */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px;
+  background-color: #f1f8e9; /* Light greenish background */
+  border: 2px solid #4caf50; /* Eco-friendly green border */
+  border-radius: 12px; /* Rounded corners for a softer look */
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the box */
+.glowing-text:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+/* Keyframe animation for glowing effect */
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50;
+  }
+  100% {
+    text-shadow: 0 0 20px #4caf50, 0 0 30px #4caf50, 0 0 40px #4caf50;
+  }
+}
+
+/* Box Titles with Gradient */
+.box-title {
+  background: linear-gradient(135deg, #db6027, #a5d6a7); /* Eco-friendly Green Gradient */
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Ingredient Box Styles */
+.missing-ingredient-box {
+  background: linear-gradient(135deg, #e6704f, #e97456); /* Warm gradient */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #4caf50; /* Eco-friendly Green border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.missing-ingredient-box:hover {
+  transform: scale(1.05); /* Hover scale effect */
+  box-shadow: 0 0 20px rgba(56, 142, 108, 0.5); /* More prominent shadow on hover */
+}
+
+.missing-ingredient-text {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: glowing 1.5s infinite alternate;
+}
+
+/* Ingredient Carousel */
+.ingredient-carousel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ingredient-card {
+  background: linear-gradient(135deg, #a5d6a7, #81c784);
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.ingredient-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(56, 142, 108, 0.3);
+}
+
+/* Button Styles */
+.btn-info {
+  background: linear-gradient(135deg, #4caf50, #a5d6a7);
+  border-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-info:hover {
+  background: linear-gradient(135deg, #a5d6a7, #4caf50);
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #4caf50, #a5d6a7);
+  color: #fff;
+  border-color: #4caf50;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #a5d6a7, #4caf50);
+  transform: scale(1.05);
+}
+
+/* Product Suggestion Box */
+.product-suggestion {
+  background: linear-gradient(135deg, #bd340e, #a5d6a7);
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #4caf50;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.product-suggestion:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(56, 142, 108, 0.5);
+}
+
+/* Loading Indicator */
+.loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #81c784;
+  font-size: 1.2rem;
+}
+
+/* Error Message */
+.error-message {
+  color: #d9534f;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.sustainable-alternatives-toggle {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Form Input Fields */
+.form-control {
+  transition: border-color 0.3s ease;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-control:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(203, 86, 18, 0.5);
+}
+
+/* Icon Styles */
+.icon {
+  font-size: 1.5rem;
+  color: #4caf50; /* Eco-friendly Green */
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* Background Image */
+body {
+  background: linear-gradient(135deg, #e6704f, #e97456);
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+main {
+  padding: 20px;
+}
+
+
+

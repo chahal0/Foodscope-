@@ -1,0 +1,46 @@
+.footer {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Attractive gradient */
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer .social-icons a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffe29f;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 1.5rem 0;
+  width: 80%;
+}
+
+.footer small {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}

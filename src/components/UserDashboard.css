@@ -1,0 +1,256 @@
+/* General Styles */
+.user-dashboard {
+  font-family: 'Arial', sans-serif;
+  background-color: #e28b2e85; /* Light background for better contrast */
+  padding: 20px;
+}
+
+.heading-style {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0d4484; /* Darker color for headings */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block; /* Makes the box wrap around the heading */
+  padding: 10px 20px;
+  border: 2px solid #0d4484; /* Border color same as text */
+  border-radius: 8px;
+  background-color: #f4f9fd; /* Light background for the heading box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.heading-style:hover {
+  color: #e74c3c; /* Highlight color on hover */
+  background-color: #e7f3e7; /* Light green background on hover */
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+.card {
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-body:hover {
+  transform: translateY(-5px); /* Subtle hover effect for card */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Hover shadow effect */
+}
+
+h2 {
+  color: #333;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #ecf0f1; /* Light hover effect on list items */
+}
+
+/* User Dashboard Specific Styles */
+.user-dashboard__login {
+  background-color: #570bad;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.user-dashboard__login:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-dashboard__badge {
+  background-color: #ffeb3b;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.user-dashboard__badge:hover {
+  background-color: #f39c12; /* Darker yellow on hover */
+}
+
+.user-dashboard__badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.user-dashboard__badges:hover {
+  transform: scale(1.02); /* Slight scaling effect */
+}
+
+.user-dashboard__recipes,
+.user-dashboard__meal-plan,
+.user-dashboard__activity-tracker,
+.user-dashboard__premium {
+  background-color: #c75932;
+  border: 1px solid #ac2020;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.user-dashboard__recipes li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-dashboard__meal-plan td {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.user-dashboard__meal-plan td:hover {
+  background-color: #db4f33;
+}
+
+.user-dashboard__activity-tracker ul {
+  padding-left: 20px;
+}
+
+.user-dashboard__premium-perks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.user-dashboard__premium-perks li {
+  padding: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.user-dashboard__premium-perks li:hover {
+  transform: translateX(5px); /* Sliding effect on hover */
+}
+
+/* Premium Section Styles */
+.user-dashboard__premium {
+  background-color: #ef8b10;
+  border: 1px solid #bee5eb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.user-dashboard__premium:hover {
+  background-color: #b3e0e9; /* Slight darkening on hover */
+}
+
+.user-dashboard__premium-perks {
+  background-color: #ea821b;
+  border: 1px solid #c3e6cb;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.user-dashboard__premium .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  padding: 12px 30px;
+  transition: background-color 0.3s ease;
+}
+
+.user-dashboard__premium .btn-primary:hover {
+  background-color: #084298;
+  border-color: #084298;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .user-dashboard__badges,
+  .user-dashboard__meal-plan,
+  .user-dashboard__activity-tracker {
+    padding: 1rem;
+  }
+
+  .user-dashboard__badge {
+    padding: 8px 12px;
+  }
+
+  .user-dashboard__recipes li {
+    font-size: 0.9rem;
+  }
+
+  .card-body {
+    padding: 1.2rem;
+  }
+}
+
+/* Custom Background Image for Sections */
+.user-dashboard__recipes {
+  background-image: url('https://img.freepik.com/premium-photo/food-cooking-background-stone-texture-with-sea-salt-pepper-garlic-parsley-light-grey-abstract-food-background-empty-space-text-can-be-used-food-posters-design-menu-top-view_253362-16400.jpg?w=2000'); /* Add a background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.user-dashboard__recipes li {
+  background-color: rgba(213, 105, 55, 0.8); /* Semi-transparent background for list items */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.user-dashboard__meal-plan {
+  background-image: url('https://reciperunner.com/wp-content/uploads/2017/01/healthy-weekly-meal-plan-78-horizontal.jpg'); /* Add a background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.user-dashboard__premium-perks {
+  background-image: url('https://img.freepik.com/premium-vector/champagne-toast-pop-art_18591-1091.jpg?w=996'); /* Add a background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Animation for Card Entry */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-body {
+  animation: fadeIn 0.8s ease-out;
+}
+
+

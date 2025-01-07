@@ -1,0 +1,9 @@
+fetch('https://cosylab.iiitd.edu.in/recipe-search/recipe?&pageSize=10&searchText=Idli', {
+  method: 'GET',
+  headers: {
+    'x-API-key': 'cosylab',
+  },
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error:', error));
