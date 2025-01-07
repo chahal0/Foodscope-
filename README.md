@@ -3,8 +3,7 @@
 
 FlavourCompanion is a web app designed to enhance food experiences by making them smarter, more enjoyable, and personalized. With an intuitive interface, it offers a range of features that elevate the dining experience for food lovers everywhere.
 
-# Features
-
+## Features
 
 🍴 Dish Pairing Recommendations
 Find the perfect food combinations to level up your meals.
@@ -21,8 +20,7 @@ Get instant suggestions for recipes, food trivia, or even fun culinary tips.
 🌍 Local Cuisine Discovery
 Connect with food lovers and explore unique cuisines from different regions.
 
-# Challenges Faced
-
+## Challenges Faced
 
 ⚙️ Tight 24-Hour Deadline
 Transforming ideas into reality with minimal sleep was a true test of time management!
@@ -34,26 +32,31 @@ A single misplaced line of code at 3 AM almost doomed the app, but we persevered
 Striking the perfect balance between making the app cool and ensuring its practicality was key.
 
 
+### For the Frontend:
+
+Open the terminal and run the following commands:
+bash
+Copy code
+npm install
+npm run
+npm i
+npm run dev
 
 
+### For the Server:
+
+Open the terminal and execute the command:
+bash
+Copy code
+node ./proxyServer.mjs
 
 
+### To Push Changes to GitHub:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Push the changes forcefully to the remote main branch:
+bash
+Copy code
+git push --force origin main
 
 
 
