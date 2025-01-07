@@ -1,4 +1,6 @@
 FlavourCompanion
+
+
 FlavourCompanion is a web app designed to enhance food experiences by making them smarter, more enjoyable, and personalized. With an intuitive interface, it offers a range of features that elevate the dining experience for food lovers everywhere.
 
 Features
@@ -18,6 +20,8 @@ Get instant suggestions for recipes, food trivia, or even fun culinary tips.
 Connect with food lovers and explore unique cuisines from different regions.
 
 Challenges Faced
+
+
 ⚙️ Tight 24-Hour Deadline
 Transforming ideas into reality with minimal sleep was a true test of time management!
 
