@@ -37,10 +37,10 @@ Striking the perfect balance between making the app cool and ensuring its practi
 Open the terminal and run the following commands:
 bash
 Copy code
-# npm install
-# npm run
-# npm i
-# npm run dev
+#### npm install
+#### npm run
+#### npm i
+#### npm run dev
 
 
 ### For the Server:
@@ -48,7 +48,7 @@ Copy code
 Open the terminal and execute the command:
 bash
 Copy code
-# node ./proxyServer.mjs
+#### node ./proxyServer.mjs
 
 
 ### To Push Changes to GitHub:
@@ -56,7 +56,7 @@ Copy code
 Push the changes forcefully to the remote main branch:
 bash
 Copy code
-# git push --force origin main
+#### git push --force origin main
 
 
 
